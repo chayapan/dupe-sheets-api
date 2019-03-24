@@ -1,0 +1,11 @@
+
+Google Sheets as a Reporting Tool: Sheets API
+
+
+https://google.qwiklabs.com/focuses/1758
+
+client ID
+811464884973-pdeeuvbgorutec3rehcds3nqsdmjrq9t.apps.googleusercontent.com
+
+client secret
+smmu9z98otnBTUSuigzelOx0

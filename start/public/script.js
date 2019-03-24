@@ -47,15 +47,16 @@ function showMessage(message) {
   });
 }
 
-// TODO: Add Google Sign-in.
+// Google Sign-in.
+
 function onSignIn(user) {
   var profile = user.getBasicProfile();
   $('#profile .name').text(profile.getName());
   $('#profile .email').text(profile.getEmail());
 }
 
+// Spreadsheet control handlers.
 
-// TODO: Add spreadsheet control handlers.
 $(function() {
   $('button[rel="create"]').click(function() {
     makeRequest('POST', '/spreadsheets', function(err, spreadsheet) {
@@ -68,7 +69,7 @@ $(function() {
     var url = '/spreadsheets/' + spreadsheetId + '/sync';
     makeRequest('POST', url, function(err) {
       if (err) return showError(err);
-      showMessage('Sync complete.');
+      showMessage('Sync complete.')
     });
   });
 });
